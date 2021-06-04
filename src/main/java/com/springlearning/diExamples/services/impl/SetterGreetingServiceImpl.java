@@ -1,10 +1,12 @@
 package com.springlearning.diExamples.services.impl;
 
 import com.springlearning.diExamples.services.interfaces.GreetingService;
+import org.springframework.stereotype.Service;
 
-public class GreetingServiceImpl implements GreetingService {
+@Service
+public class SetterGreetingServiceImpl implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World";
+        return "Hello World -- Setter";
     }
 }
